@@ -32,18 +32,31 @@ In total, 1.2 million data points were collected and structured in 36 data sets.
 
 ### Indices
 In our Pandas dataframe structure the following indices were used.
-
-| anchor   | anchor identifier (can be 21, 22, 23)                                       |
+| Index    | Description                                                                 |
 |----------|-----------------------------------------------------------------------------|
-| sample   | sequence number                                                             |
-| step     | packet type of DS-TWR message exchance (0-Packet A, 1-Packet B, 2-Packet C) |
+| anchor   | Anchor identifier (can be 21, 22, 23)                                       |
+| sample   | Sequence number                                                             |
+| step     | Packet type of DS-TWR message exchance (0-Packet A, 1-Packet B, 2-Packet C) |
 | path     | LOS/NLOS                                                                    |
-| tagAngle | angle between tag and anchor antennas                                       |
-| location | environment                                                                 |
-| obstacle | obstacle obstructing LOS path                                               |
+| tagAngle | Angle between tag and anchor antennas                                       |
+| location | Environment                                                                 |
+| obstacle | Obstacle obstructing LOS path                                               |
 
 ### Features
-To be completed.
+The following features were collected for each packet of the DS-TWR packet exchange.
+| Feature                                              | Description                          |
+|------------------------------------------------------|--------------------------------------|
+| firstPathPower                                       | First path power                     |
+| receivePower                                         | Received signal power level          |
+| saturationFeat                                       | Accumulator saturation               |
+| maxAmpl                                              | Max CIR amplitude                    |
+| meanExcessDelay                                      | Mean excess delay                    |
+| delaySpread                                          | Delay spread                         |
+| kurtosis                                             | Kurtosis                             |
+| prNLOS                                               | Probability NLOS                     |
+| pUEP                                                 | Probability of undetected early path |
+| TS_TTX1, TS_ARX1, TS_ATX1, TS_TRX1, TS_TTX2, TS_ARX2 | DS-TWR timestamps                    |
+| CIR_1..99                                            | CIR samples                          |
 
 
 ## How to use our datasets
