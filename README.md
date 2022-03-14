@@ -31,7 +31,7 @@ In total, 1.2 million data points were collected and structured in 36 data sets.
 * Humans: When UWB is used in wearable devices the line of sight is usually obstructed in one direction.
 
 ### Indices
-In our Pandas dataframe structure the following indices were used.
+In our Pandas dataframe structure the following indices were used. More details as well as references can be found in the related paper.
 | Index    | Description                                                                 |
 |----------|-----------------------------------------------------------------------------|
 | anchor   | Anchor identifier (can be 21, 22, 23)                                       |
@@ -43,7 +43,7 @@ In our Pandas dataframe structure the following indices were used.
 | obstacle | Obstacle obstructing LOS path                                               |
 
 ### Features
-The following features were collected for each packet of the DS-TWR packet exchange.
+The following features were collected for each packet of the DS-TWR packet exchange. More details as well as references can be found in the related paper.
 | Feature                                              | Description                          |
 |------------------------------------------------------|--------------------------------------|
 | firstPathPower                                       | First path power                     |
